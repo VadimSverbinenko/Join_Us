@@ -21,11 +21,12 @@ Using Mysql and Node.js simple registration form with output on the screen.
  #### Staring backend application
  ```bash
 cd Join_Us/
+read (How to create database.TXT) and folow the instructions
 ```
  #### Staring UI application
 ```bash
-cd Join_Us/
 npm install
+node index.js
 
 ```
 
