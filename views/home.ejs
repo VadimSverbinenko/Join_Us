@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Join Us</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<link rel="stylesheet" href="/app.css">
+</head>
+
+<body>
+<div class="flex-container">
+    <div class="container">
+        <h1>JOIN THE DARK SIDE</h1>
+ 
+<p class="lead">Enter your Full Name to join <strong><%= count %></strong> 
+<b>others</b> on our waitlist. </p>
+ 
+<form method="POST" action='/register'>
+ <input type="text" class="form" name="email" placeholder="Enter Your Full Name">
+ <button>Join Now</button>
+</form>
+    </div>
+</div>
+</body>
+
+</html>
