@@ -4,3 +4,16 @@ CREATE TABLE users (
     email VARCHAR(255) PRIMARY KEY,
     created_at TIMESTAMP DEFAULT NOW()
 );
+
+to add 500 users you need to run in cmd "node add_500_users.js
+
+if you gonna get this error:
+“ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client” Code Answer
+
+fix it with
+$ mysql -u root -p
+Enter password: (enter your root password)
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+mysql> FLUSH PRIVILEGES;
+mysql> quit
